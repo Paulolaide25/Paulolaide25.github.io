@@ -7,6 +7,6 @@ Live at https://paulolaide25.github.io/
 | Main portfolio | `/` |
 | Technology portfolio | `/tech/` |
 | Dizl music portfolio | `/music/` |
-| Concept websites | `/sites/barber.html`, `catering.html`, `events.html`, `lume.html`, `hair.html` |
+| Concept websites | `/sites/sharpedgestudio.html`, `saffronandspice.html`, `delighteventsservices.html`, `lumebeauty.html`, `crownandcurl.html` |
 
 Static HTML, CSS and JavaScript. No build step.
