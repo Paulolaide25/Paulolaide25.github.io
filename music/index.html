@@ -300,9 +300,9 @@ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es
 
 /* ===== turntable player ===== */
 var T={snow:{t:'Snow on the Dance Floor',img:'img/snow.jpg',src:'audio/snow.mp3',full:'https://open.spotify.com/track/1isKLHtDeZvDGnfQosy557',hf:'https://distrokid.com/hyperfollow/dizl/snow-on-the-dance-floor-2'},
-fire:{t:'Fire for the Summer',img:'img/fire.jpg',src:'audio/fire.mp3',full:'https://www.youtube.com/watch?v=isBNRYG3dnM',hf:'https://distrokid.com/hyperfollow/dizl/fire-for-the-summer-2'},
-festival:{t:'Festival Fever',img:'img/festival.jpg',src:'audio/festival.mp3',full:'https://www.youtube.com/watch?v=uwTGCxREiv4',hf:'https://distrokid.com/hyperfollow/dizl/festival-fever-2'},
-harvest:{t:'Harvest Vibes',img:'img/harvest.jpg',src:'audio/harvest.mp3',full:'https://www.youtube.com/watch?v=NyLhxni2BvM',hf:'https://distrokid.com/hyperfollow/dizl/harvest-vibes-2'}};
+fire:{t:'Fire for the Summer',img:'img/fire.jpg',src:'audio/fire.mp3',full:'https://open.spotify.com/track/51TmAMVEHEwu1qwLbEnYqU',hf:'https://distrokid.com/hyperfollow/dizl/fire-for-the-summer-2'},
+festival:{t:'Festival Fever',img:'img/festival.jpg',src:'audio/festival.mp3',full:'https://open.spotify.com/track/273MDmTlKGAS5gJemAotbG',hf:'https://distrokid.com/hyperfollow/dizl/festival-fever-2'},
+harvest:{t:'Harvest Vibes',img:'img/harvest.jpg',src:'audio/harvest.mp3',full:'https://open.spotify.com/track/64kIMw3bufz7aVXcQky18k',hf:'https://distrokid.com/hyperfollow/dizl/harvest-vibes-2'}};
 var aud=new Audio();aud.preload='none';var cur='snow',ac=null,$=function(id){return document.getElementById(id)};
 aud.src=T.snow.src;
 function ctxInit(){if(ac)return;try{var C=window.AudioContext||window.webkitAudioContext;ac=new C();var src=ac.createMediaElementSource(aud);var an=ac.createAnalyser();an.fftSize=256;an.smoothingTimeConstant=.78;src.connect(an);an.connect(ac.destination);FD=new Uint8Array(an.frequencyBinCount);AN=an}catch(e){AN=null}}
